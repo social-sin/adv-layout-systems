@@ -1,118 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Advanced List Layouts</title>
+  <title>Flex vs Grid Thinking</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Advanced List Layouts</h1>
+  <header class="hero">
+    <h1>Advanced Layout Systems</h1>
 
-    <p class="intro">
-      Explore Flexbox, Grid, CSS counters,
-      multi-column lists, icon alignment,
-      and nested list structures.
+    <p>
+      Understanding Flexbox vs Grid thinking:
+      flow vs structure, alignment vs layout,
+      and one-dimensional vs two-dimensional design.
     </p>
   </header>
 
-  <!-- FLEXBOX MENU -->
+  <!-- FLEXBOX EXAMPLE -->
   <section class="card">
-    <h2>Flexbox Navigation Menu</h2>
+    <h2>Flexbox = Flow & Alignment</h2>
 
-    <ul class="flex-menu">
-      <li>Home</li>
-      <li>About</li>
-      <li>Gallery</li>
-      <li>Contact</li>
-    </ul>
+    <p>
+      Flexbox works best for arranging content
+      in one direction at a time.
+    </p>
+
+    <nav class="flex-nav">
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
   </section>
 
-  <!-- GRID LIST -->
+  <!-- GRID EXAMPLE -->
   <section class="card">
-    <h2>Grid-Based List</h2>
+    <h2>Grid = Structure & Layout</h2>
 
-    <ul class="grid-list">
-      <li>Project 1</li>
-      <li>Project 2</li>
-      <li>Project 3</li>
-      <li>Project 4</li>
-      <li>Project 5</li>
-      <li>Project 6</li>
-    </ul>
+    <p>
+      Grid works best for structured layouts
+      using rows and columns simultaneously.
+    </p>
+
+    <div class="grid-layout">
+      <div class="grid-item">Card 1</div>
+      <div class="grid-item">Card 2</div>
+      <div class="grid-item">Card 3</div>
+      <div class="grid-item">Card 4</div>
+      <div class="grid-item">Card 5</div>
+      <div class="grid-item">Card 6</div>
+    </div>
   </section>
 
-  <!-- CSS COUNTERS -->
+  <!-- COMBINED LAYOUT -->
   <section class="card">
-    <h2>CSS Counter List</h2>
+    <h2>Combining Grid + Flex</h2>
 
-    <ol class="counter-list">
-      <li>Planning</li>
-      <li>Research</li>
-      <li>Design</li>
-      <li>Execution</li>
-      <li>Review</li>
-    </ol>
+    <p>
+      Grid organizes the page structure,
+      while Flexbox aligns content inside components.
+    </p>
+
+    <div class="dashboard">
+
+      <article class="panel">
+        <div class="panel-header">
+          <h3>Projects</h3>
+          <button>View</button>
+        </div>
+
+        <p>
+          Flexbox aligns the heading and button.
+        </p>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h3>Analytics</h3>
+          <button>Open</button>
+        </div>
+
+        <p>
+          Grid controls the overall layout structure.
+        </p>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h3>Archive</h3>
+          <button>Browse</button>
+        </div>
+
+        <p>
+          Most modern interfaces combine both systems.
+        </p>
+      </article>
+
+    </div>
   </section>
 
-  <!-- MULTI COLUMN -->
+  <!-- VISUAL THINKING -->
   <section class="card">
-    <h2>Multi-Column List</h2>
+    <h2>Layout Thinking</h2>
 
-    <ul class="multi-column">
-      <li>Apples</li>
-      <li>Bananas</li>
-      <li>Cherries</li>
-      <li>Dates</li>
-      <li>Grapes</li>
-      <li>Lemons</li>
-      <li>Mangoes</li>
-      <li>Peaches</li>
-      <li>Strawberries</li>
-    </ul>
-  </section>
+    <div class="comparison">
 
-  <!-- ICON ALIGNMENT -->
-  <section class="card">
-    <h2>Icon & Text Alignment</h2>
-
-    <ul class="icon-list">
-      <li>Responsive Design</li>
-      <li>Accessible Navigation</li>
-      <li>Flexible Layout Systems</li>
-      <li>Modern CSS Workflows</li>
-    </ul>
-  </section>
-
-  <!-- NESTED LIST -->
-  <section class="card">
-    <h2>Nested Lists</h2>
-
-    <ul class="nested-list">
-      <li>
-        Design Principles
+      <div class="thinking-box">
+        <h3>Flex Thinking</h3>
 
         <ul>
-          <li>
-            Typography
-
-            <ul>
-              <li>Hierarchy</li>
-              <li>Readability</li>
-            </ul>
-
-          </li>
-
-          <li>Color Theory</li>
+          <li>One direction</li>
+          <li>Content flow</li>
+          <li>Dynamic spacing</li>
+          <li>Component alignment</li>
         </ul>
-      </li>
+      </div>
 
-      <li>Layout Systems</li>
-    </ul>
+      <div class="thinking-box">
+        <h3>Grid Thinking</h3>
+
+        <ul>
+          <li>Rows + columns</li>
+          <li>Structural control</li>
+          <li>Spatial organization</li>
+          <li>Page layout systems</li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 
 </body>
